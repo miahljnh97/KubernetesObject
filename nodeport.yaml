@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-container
+spec:
+  selector:
+    role: helloRole
+  ports:
+    - protocol: TCP
+      port: 80
+  type: NodePort
